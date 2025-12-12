@@ -2,7 +2,7 @@
 
 Monorepo:
 - sir-ai
-- sir-clinent-alarm
-- sir-clinent-dashboard
+- sir-client-alarm
+- sir-client-dashboard
 - sir-data-base
 - sir-server
