@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  db:
+    image: postgis/postgis:16-3.4
+    container_name: sir-postgis
+    environment:
+      POSTGRES_DB: sir
+      POSTGRES_USER: sir
+      POSTGRES_PASSWORD: sir
+    ports:
+      - "5432:5432"
+    volumes:
+      - sir_pgdata:/var/lib/postgresql/data
+
+volumes:
+  sir_pgdata:
