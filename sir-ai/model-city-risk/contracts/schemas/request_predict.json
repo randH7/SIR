@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "request_predict.json",
+  "title": "PredictRequest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["window_start"],
+  "properties": {
+    "window_start": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO timestamp for start of prediction window"
+    },
+    "window_minutes": {
+      "type": "integer",
+      "minimum": 15,
+      "maximum": 360,
+      "default": 60
+    },
+    "geo_area": {
+      "type": ["string", "null"],
+      "enum": [
+        "Central",
+        "East",
+        "North",
+        "West",
+        "NorthEast",
+        "NorthWest",
+        "South",
+        "SouthEast",
+        "SouthWest",
+        null
+      ]
+    },
+    "domain": {
+      "type": ["string", "null"],
+      "enum": [
+        "traffic",
+        "drugs",
+        "public_order",
+        "health",
+        "civil_defense",
+        "security",
+        null
+      ]
+    }
+  }
+}

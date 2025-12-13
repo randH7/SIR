@@ -1,0 +1,103 @@
+project:
+  name: model-city-risk
+  model_name: City Risk Prediction Model
+  timezone: Asia/Riyadh
+
+paths:
+  data_dir: data
+  input_dir: data/input_datasets
+  output_dir: data/output_predictions
+  artifacts_dir: artifacts
+  models_dir: artifacts/models
+  metrics_dir: artifacts/metrics
+
+simulation:
+  city: Riyadh
+  start_date: "2025-01-01"
+  end_date: "2025-12-01"
+
+features:
+  window_minutes: 60
+  rolling_windows: [8]
+  lags: [1, 2]
+  themes: [crowding, threat, weapons, drifting, storm, road_block, harassment]
+  geo_areas: [Central, East, North, West, NorthEast, NorthWest, South, SouthEast, SouthWest]
+
+model:
+  domains: [traffic, drugs, public_order, health, civil_defense, security]
+  estimator: random_forest
+  evaluation:
+    # Classification threshold used to compute precision/recall/F1/accuracy metrics.
+    # If not set, code falls back to prediction.min_prob_for_sector.
+    threshold: 0.35
+    # For demo-quality metrics: tune a per-domain threshold on a time-based validation slice,
+    # then report test metrics at those tuned thresholds.
+    threshold_tuning:
+      enabled: true
+      val_days: 14
+      grid: [0.05, 0.10, 0.15, 0.20, 0.25, 0.30, 0.35, 0.40, 0.45, 0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90]
+  random_forest:
+    # Keep the baseline compact enough to ship as an artifact (GitHub file limit).
+    n_estimators: 60
+    max_depth: 10
+    min_samples_leaf: 3
+    class_weight: balanced
+    n_jobs: -1
+    random_state: 42
+  train_test_split:
+    test_days: 30
+
+prediction:
+  radius_meters: 900
+  min_prob_for_sector: 0.35
+  top_k_areas: 200
+
+check_layer:
+  # Hard safety thresholds (non-negotiable)
+  max_sector_utilization_allowed: 0.85
+  max_fatigue_score_for_dispatch: 0.70
+  min_confidence_for_auto_dispatch: 0.60
+  max_policy_violation_rate: 0.00
+
+  # Reliability/stability thresholds
+  max_output_volatility: 0.08
+  min_scenario_consistency_score: 0.80
+
+  # Capacity model (synthetic). Used for overload detection & fairness.
+  sector_capacity_per_window:
+    Traffic Police: 120
+    Ambulance: 160
+    Civil Defense: 90
+    Public Security: 140
+    National Guard: 80
+    Narcotics Control: 70
+    General Investigation: 60
+    Municipality: 75
+    Ministry of Health: 110
+
+  # Policy / mandatory sectors (synthetic governance rules)
+  mandatory_sectors_by_domain:
+    traffic: [Traffic Police]
+    health: [Ambulance]
+    civil_defense: [Civil Defense]
+    security: [Public Security]
+    public_order: [Public Security]
+    drugs: [Narcotics Control]
+
+  # Explainability outputs
+  explainability:
+    top_n_features: 6
+    reasoning_tags:
+      - closest_unit
+      - highest_skill_match
+      - low_sector_load
+      - policy_mandated
+      - backup_required
+
+sectors_by_domain:
+  traffic: [Traffic Police, Ambulance, Civil Defense]
+  drugs: [Narcotics Control, General Investigation]
+  public_order: [Public Security, National Guard]
+  health: [Ambulance, Ministry of Health]
+  civil_defense: [Civil Defense, Municipality]
+  security: [Public Security, National Guard, General Investigation]

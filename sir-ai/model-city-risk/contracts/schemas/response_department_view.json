@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "response_department_view.json",
+  "title": "DepartmentViewResponse",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["domain", "window_start", "predictions"],
+  "properties": {
+    "domain": {
+      "type": "string",
+      "enum": ["traffic", "drugs", "public_order", "health", "civil_defense", "security"]
+    },
+    "window_start": { "type": "string", "format": "date-time" },
+    "predictions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "required": ["geo_area", "risk"],
+        "properties": {
+          "window_start": { "type": "string", "format": "date-time" },
+          "geo_area": { "type": "string" },
+          "center_lat": { "type": "number" },
+          "center_lon": { "type": "number" },
+          "radius_meters": { "type": "integer" },
+          "risk": { "type": "number", "minimum": 0, "maximum": 1 },
+          "risk_score": { "type": "number", "minimum": 0, "maximum": 1 },
+          "recommended_responding_sectors": { "type": "array", "items": { "type": "string" } },
+          "confidence": { "type": "number" }
+        }
+      }
+    }
+  }
+}

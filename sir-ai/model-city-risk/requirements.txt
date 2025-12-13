@@ -1,0 +1,14 @@
+fastapi==0.115.6
+uvicorn[standard]==0.32.1
+pydantic==2.10.4
+pydantic-settings==2.7.0
+PyYAML==6.0.2
+pandas==2.2.3
+numpy==2.2.1
+scikit-learn==1.6.0
+joblib==1.4.2
+orjson==3.10.12
+python-dateutil==2.9.0.post0
+jsonschema==4.23.0
+pytest==8.3.4
+httpx==0.28.1

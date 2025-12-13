@@ -1,0 +1,84 @@
+{
+  "top_global_features": [
+    {
+      "feature": "skill_match_score",
+      "coef": 14.224072229067811
+    },
+    {
+      "feature": "sector=Narcotics Control",
+      "coef": 1.8799855330806234
+    },
+    {
+      "feature": "domain=drugs",
+      "coef": -1.4546204057911822
+    },
+    {
+      "feature": "distance_km",
+      "coef": 1.2525324101039195
+    },
+    {
+      "feature": "eta_minutes",
+      "coef": -0.9144862061294264
+    },
+    {
+      "feature": "domain=security",
+      "coef": 0.9117009526568833
+    },
+    {
+      "feature": "sector=Civil Defense",
+      "coef": -0.8840492786823049
+    },
+    {
+      "feature": "sector=Ambulance",
+      "coef": -0.8735020861556769
+    },
+    {
+      "feature": "on_shift",
+      "coef": -0.6461323549001927
+    },
+    {
+      "feature": "policy_eligible",
+      "coef": -0.6461323549001927
+    },
+    {
+      "feature": "sector=National Guard",
+      "coef": -0.6328845265917306
+    },
+    {
+      "feature": "domain=public_order",
+      "coef": -0.5295558486050964
+    },
+    {
+      "feature": "domain=traffic",
+      "coef": 0.37562362352194884
+    },
+    {
+      "feature": "sector_load_ratio",
+      "coef": -0.32306617745009636
+    },
+    {
+      "feature": "unit_type=investigation",
+      "coef": -0.1439643421178492
+    },
+    {
+      "feature": "unit_type=medical",
+      "coef": -0.13760140117623962
+    },
+    {
+      "feature": "sector=Police",
+      "coef": -0.1356819965517234
+    },
+    {
+      "feature": "unit_type=patrol",
+      "coef": -0.1276433696528393
+    },
+    {
+      "feature": "unit_type=traffic",
+      "coef": -0.12476987463272485
+    },
+    {
+      "feature": "unit_type=tactical",
+      "coef": -0.11215336732069368
+    }
+  ]
+}

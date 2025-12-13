@@ -1,0 +1,44 @@
+{
+  "scenario_consistency_score": 0.9959119514316502,
+  "mean_abs_delta": 0.0008176097136699487,
+  "scenarios": [
+    {
+      "name": "signal_increase_10pct",
+      "base": {
+        "traffic": 0.5901409687991542,
+        "drugs": 0.5101413798786525,
+        "public_order": 0.6380657822506972,
+        "health": 0.5760322960159524,
+        "civil_defense": 0.4639419957568505,
+        "security": 0.5494656620106227
+      },
+      "after": {
+        "traffic": 0.5907517189121118,
+        "drugs": 0.51019712807689,
+        "public_order": 0.6404189410873197,
+        "health": 0.5757445129116451,
+        "civil_defense": 0.4626865725112849,
+        "security": 0.5492113808557271
+      }
+    },
+    {
+      "name": "storm_weather_spike",
+      "base": {
+        "traffic": 0.5901409687991542,
+        "drugs": 0.5101413798786525,
+        "public_order": 0.6380657822506972,
+        "health": 0.5760322960159524,
+        "civil_defense": 0.4639419957568505,
+        "security": 0.5494656620106227
+      },
+      "after": {
+        "traffic": 0.5897132403548043,
+        "drugs": 0.5103598219236815,
+        "public_order": 0.6378446486878113,
+        "health": 0.5736559026030678,
+        "civil_defense": 0.4627537041375316,
+        "security": 0.5489034791836378
+      }
+    }
+  ]
+}

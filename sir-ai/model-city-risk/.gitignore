@@ -1,0 +1,27 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+.artifacts/
+
+# Artifacts + generated data
+/data/input_datasets/*.csv
+/data/output_predictions/*
+/artifacts/models/*
+/artifacts/metrics/*
+!artifacts/metrics/model_card.md
+!artifacts/metrics/evaluation_report.json
+
+# Allow committing lightweight, deterministic outputs (so Windows users can run without training)
+!data/output_predictions/risk_predictions_latest.csv
+!data/output_predictions/risk_predictions_latest.json
+!artifacts/models/city_risk_model.pkl
+!artifacts/models/encoders.pkl
+!artifacts/metrics/check_latest.json
+!artifacts/metrics/offline_quality_report.json
+!artifacts/metrics/scenario_test_results.json
+!artifacts/metrics/capacity_stress_test.json
+!artifacts/metrics/explanations.json
+
+# OS
+.DS_Store

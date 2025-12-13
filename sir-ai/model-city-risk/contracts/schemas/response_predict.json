@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "response_predict.json",
+  "title": "PredictResponse",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["model_name", "generated_at", "approval_status", "reasons", "confidence_score", "predictions"],
+  "properties": {
+    "model_name": { "type": "string" },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "approval_status": { "type": "string", "enum": ["approved", "warning", "blocked"] },
+    "reasons": { "type": "array", "items": { "type": "string" } },
+    "confidence_score": { "type": "number", "minimum": 0, "maximum": 1 },
+    "predictions": {
+      "type": "array",
+      "items": { "$ref": "response_area_risk.json" }
+    }
+  }
+}

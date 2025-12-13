@@ -1,0 +1,33 @@
+{
+  "matching_recommendation_quality": {
+    "topk_match_accuracy": 0.995,
+    "skill_match_score": 0.9927481318724733,
+    "historical_success_lift_vs_random": 0.0
+  },
+  "response_time_metrics": {
+    "mean_estimated_response_time": 11.518618167886613,
+    "p90_estimated_response_time": 11.69849327558696,
+    "p95_estimated_response_time": 11.69857388230831,
+    "mean_abs_error_estimated_vs_historical": 2.2745986577045674
+  },
+  "capacity_load_metrics": {
+    "sector_utilization": {
+      "Traffic Police": 0.6316760761249024,
+      "Ambulance": 0.6316760761249024,
+      "Civil Defense": 0.6316760761249024,
+      "Public Security": 0.6316760761249024,
+      "National Guard": 0.6316760761249024,
+      "Narcotics Control": 0.6316760761249024,
+      "General Investigation": 0.6316760761249024,
+      "Municipality": 0.6316460727281737,
+      "Ministry of Health": 0.6316760761249024
+    },
+    "max_sector_utilization": 0.6316760761249024
+  },
+  "optimization_quality": {
+    "load_balance_gini": 4.6911925169171e-06
+  },
+  "constraint_compliance": {
+    "policy_violation_rate": 0.0
+  }
+}

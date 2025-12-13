@@ -1,0 +1,32 @@
+{
+  "base": {
+    "max_sector_utilization": 0.585132449336735,
+    "sector_utilization": {
+      "Traffic Police": 0.585132449336735,
+      "Ambulance": 0.585132449336735,
+      "Civil Defense": 0.585132449336735,
+      "Public Security": 0.585132449336735,
+      "National Guard": 0.585132449336735,
+      "Narcotics Control": 0.585132449336735,
+      "General Investigation": 0.585132449336735,
+      "Municipality": 0.5841101000671336,
+      "Ministry of Health": 0.585132449336735
+    }
+  },
+  "stressed": {
+    "max_sector_utilization": 1.0,
+    "sector_utilization": {
+      "Traffic Police": 1.0,
+      "Ambulance": 1.0,
+      "Civil Defense": 1.0,
+      "Public Security": 1.0,
+      "National Guard": 1.0,
+      "Narcotics Control": 1.0,
+      "General Investigation": 1.0,
+      "Municipality": 1.0,
+      "Ministry of Health": 1.0
+    }
+  },
+  "threshold": 0.85,
+  "would_block_under_stress": true
+}

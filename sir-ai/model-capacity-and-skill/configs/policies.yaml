@@ -1,0 +1,33 @@
+domains:
+  traffic:
+    primary_sector: Police
+    allowed_support_sectors: [National Guard, Ambulance, Civil Defense]
+    mandatory_dual_sector: false
+  drugs:
+    primary_sector: Narcotics Control
+    allowed_support_sectors: [Police, National Guard]
+    mandatory_dual_sector: true
+  health:
+    primary_sector: Ambulance
+    allowed_support_sectors: [Civil Defense, Police]
+    mandatory_dual_sector: false
+  security:
+    primary_sector: National Guard
+    allowed_support_sectors: [Police, Civil Defense]
+    mandatory_dual_sector: true
+  public_order:
+    primary_sector: Police
+    allowed_support_sectors: [National Guard, Civil Defense]
+    mandatory_dual_sector: true
+  civil_defense:
+    primary_sector: Civil Defense
+    allowed_support_sectors: [Ambulance, Police]
+    mandatory_dual_sector: false
+
+sector_ministry:
+  Police: Ministry of Interior
+  National Guard: Ministry of Interior
+  Narcotics Control: Ministry of Interior
+  Ambulance: Ministry of Health
+  Civil Defense: Ministry of Interior
+  General Investigation: Ministry of Interior

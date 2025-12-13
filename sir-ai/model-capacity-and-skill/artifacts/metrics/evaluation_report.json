@@ -1,0 +1,35 @@
+{
+  "trained_at": "2025-12-13T11:06:03.327865+00:00",
+  "train_metrics": {
+    "train_roc_auc": 0.9738542671114089
+  },
+  "offline": {
+    "topk_match_accuracy@5": 1.0,
+    "topk_match_accuracy@10": 1.0,
+    "mean_confidence": 0.3326087533815342,
+    "match_classification": {
+      "accuracy@0.5": 0.9265738634943643,
+      "precision@0.5": 0.8234219142617832,
+      "recall@0.5": 0.9458584798390623,
+      "f1@0.5": 0.8804038101441016,
+      "tp": 10814,
+      "fp": 2319,
+      "tn": 26261,
+      "fn": 619
+    },
+    "match_classification_best_f1": {
+      "threshold": 0.6,
+      "accuracy": 0.9311973608577212,
+      "precision": 0.8492114579980689,
+      "recall": 0.9231172920493309,
+      "f1": 0.8846234441138259
+    },
+    "test_probability_quality": {
+      "roc_auc": 0.9733819734251158,
+      "pr_auc": 0.9091453646965793
+    }
+  },
+  "constraint_compliance": {
+    "policy_violation_rate": 0.0
+  }
+}

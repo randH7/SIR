@@ -1,0 +1,11 @@
+{
+  "generated_at": "2025-12-13T11:33:30.623964Z",
+  "approval_status": "warning",
+  "reasons": [
+    "low_confidence"
+  ],
+  "confidence_score": 0.47267415507184446,
+  "policy_violation_rate": 0.0,
+  "max_sector_utilization": 0.6316760761249024,
+  "scenario_consistency_score": 0.9959119514316502
+}

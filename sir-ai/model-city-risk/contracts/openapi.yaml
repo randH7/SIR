@@ -1,0 +1,144 @@
+openapi: 3.0.3
+info:
+  title: City Risk Prediction API
+  version: 0.1.0
+  description: Backend-only API for the City Risk Prediction Model (synthetic baseline).
+servers:
+  - url: http://localhost:8000
+paths:
+  /health:
+    get:
+      summary: Health check
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                additionalProperties: false
+                properties:
+                  status:
+                    type: string
+                required: [status]
+  /predict:
+    post:
+      summary: Generate risk predictions for a time window
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: ./schemas/request_predict.json
+      responses:
+        '200':
+          description: Predictions
+          content:
+            application/json:
+              schema:
+                $ref: ./schemas/response_predict.json
+        '404':
+          description: No rows for the requested window/filter
+        '503':
+          description: Model not trained or datasets missing
+  /predictions/latest:
+    get:
+      summary: Return latest persisted predictions
+      responses:
+        '200':
+          description: Latest predictions
+          content:
+            application/json:
+              schema:
+                type: object
+                additionalProperties: false
+                required: [model_name, window_start, predictions]
+                properties:
+                  model_name:
+                    type: string
+                  window_start:
+                    type: string
+                    format: date-time
+                  predictions:
+                    type: array
+                    items:
+                      $ref: ./schemas/response_area_risk.json
+        '404':
+          description: No latest predictions file
+  /areas/{geo_area}/risk:
+    get:
+      summary: Latest risk for a specific geo area
+      parameters:
+        - in: path
+          name: geo_area
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Area risk record
+          content:
+            application/json:
+              schema:
+                $ref: ./schemas/response_area_risk.json
+        '404':
+          description: Geo area not found
+  /departments/{domain}/view:
+    get:
+      summary: Domain-specific filtered prediction view
+      parameters:
+        - in: path
+          name: domain
+          required: true
+          schema:
+            type: string
+            enum: [traffic, drugs, public_order, health, civil_defense, security]
+      responses:
+        '200':
+          description: Department view
+          content:
+            application/json:
+              schema:
+                $ref: ./schemas/response_department_view.json
+        '400':
+          description: Unknown domain
+        '404':
+          description: No latest predictions file
+
+  /model/health:
+    get:
+      summary: Model readiness / health (training + gate outputs)
+      responses:
+        '200':
+          description: Health state
+          content:
+            application/json:
+              schema:
+                type: object
+                additionalProperties: true
+
+  /model/metrics:
+    get:
+      summary: Return evaluation + stress test metrics artifacts
+      responses:
+        '200':
+          description: Metrics bundle
+          content:
+            application/json:
+              schema:
+                type: object
+                additionalProperties: true
+
+  /model/check/latest:
+    get:
+      summary: Latest check-layer gate decision
+      responses:
+        '200':
+          description: Latest check decision
+          content:
+            application/json:
+              schema:
+                type: object
+                additionalProperties: true
+        '404':
+          description: No check layer report found

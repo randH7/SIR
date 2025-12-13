@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "response_area_risk.json",
+  "title": "PredictionRecord",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "window_start",
+    "geo_area",
+    "center_lat",
+    "center_lon",
+    "radius_meters",
+    "risk_by_domain",
+    "risk_score",
+    "recommended_responding_sectors",
+    "confidence_overlay"
+  ],
+  "properties": {
+    "window_start": { "type": "string", "format": "date-time" },
+    "geo_area": {
+      "type": "string",
+      "enum": [
+        "Central",
+        "East",
+        "North",
+        "West",
+        "NorthEast",
+        "NorthWest",
+        "South",
+        "SouthEast",
+        "SouthWest"
+      ]
+    },
+    "center_lat": { "type": "number" },
+    "center_lon": { "type": "number" },
+    "radius_meters": { "type": "integer", "const": 900 },
+    "risk_by_domain": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "traffic": { "type": "number", "minimum": 0, "maximum": 1 },
+        "drugs": { "type": "number", "minimum": 0, "maximum": 1 },
+        "public_order": { "type": "number", "minimum": 0, "maximum": 1 },
+        "health": { "type": "number", "minimum": 0, "maximum": 1 },
+        "civil_defense": { "type": "number", "minimum": 0, "maximum": 1 },
+        "security": { "type": "number", "minimum": 0, "maximum": 1 }
+      }
+    },
+    "risk_score": { "type": "number", "minimum": 0, "maximum": 1 },
+    "recommended_responding_sectors": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "confidence_overlay": {
+      "type": "object",
+      "additionalProperties": { "type": "number" }
+    }
+  }
+}

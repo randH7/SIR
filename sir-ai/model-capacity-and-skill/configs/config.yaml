@@ -1,0 +1,36 @@
+project:
+  name: model-resource-deployment
+  version: 0.1.0
+
+paths:
+  data_dir: data/input_datasets
+  output_dir: data/output_plans
+  artifacts_dir: artifacts
+  models_dir: artifacts/models
+  metrics_dir: artifacts/metrics
+
+training:
+  random_seed: 42
+  max_negative_samples_per_incident: 5
+  max_training_pairs: 200000
+  test_size: 0.2
+
+optimization:
+  top_k: 10
+  max_units_to_dispatch: 5
+  min_available_people_per_unit: 2
+  max_distance_km: 50
+
+thresholds:
+  max_sector_utilization_allowed: 0.85
+  max_fatigue_score_for_dispatch: 0.70
+  min_confidence_score_for_auto_dispatch: 0.60
+  max_policy_violation_rate: 0.0
+  max_missing_data_rate: 0.02
+
+check_layer:
+  enable: true
+  fallback_mode: rule_based
+  warning_band:
+    min_confidence: 0.45
+    max_sector_utilization: 0.90

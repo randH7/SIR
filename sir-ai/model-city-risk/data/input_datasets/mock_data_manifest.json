@@ -1,0 +1,20 @@
+{
+  "generated_at": "2025-12-13T09:54:52.471427Z",
+  "seed": 42,
+  "start": "2025-01-01",
+  "end": "2025-12-01",
+  "rows_incidents": 50000,
+  "rows_signals": 50000,
+  "rows_events": 50000,
+  "files": [
+    "weather_conditions.csv",
+    "incidents_all_911.csv",
+    "incidents_national_guard.csv",
+    "incidents_narcotics_control.csv",
+    "incidents_general_investigation.csv",
+    "incidents_ambulance.csv",
+    "social_media_signals.csv",
+    "news_signals.csv",
+    "events_sports.csv"
+  ]
+}

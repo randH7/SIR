@@ -1,0 +1,76 @@
+{
+  "per_domain": {
+    "traffic": {
+      "roc_auc": 0.6331075114555336,
+      "avg_precision": 0.55340157495722,
+      "threshold": 0.45,
+      "precision": 0.500943841434639,
+      "recall": 0.7523033309709426,
+      "f1": 0.6014164305949008,
+      "accuracy": 0.5663430420711975,
+      "positive_rate": 0.43488981353059025
+    },
+    "drugs": {
+      "roc_auc": 0.585354019323661,
+      "avg_precision": 0.3932073293542454,
+      "threshold": 0.45,
+      "precision": 0.35660506502395617,
+      "recall": 0.7446403049070986,
+      "f1": 0.48225856217216906,
+      "accuracy": 0.48281707505008475,
+      "positive_rate": 0.3234704885190322
+    },
+    "public_order": {
+      "roc_auc": 0.7013000306035515,
+      "avg_precision": 0.8034465562590785,
+      "threshold": 0.35,
+      "precision": 0.6805702217529039,
+      "recall": 0.9275605660829935,
+      "f1": 0.7850979595980103,
+      "accuracy": 0.6737555863769455,
+      "positive_rate": 0.6424718754815842
+    },
+    "health": {
+      "roc_auc": 0.5929637323617702,
+      "avg_precision": 0.45336527098189316,
+      "threshold": 0.5,
+      "precision": 0.4275990099009901,
+      "recall": 0.5765540258656654,
+      "f1": 0.4910286018831053,
+      "accuracy": 0.5584835876098012,
+      "positive_rate": 0.36939435968562184
+    },
+    "civil_defense": {
+      "roc_auc": 0.5299957687892334,
+      "avg_precision": 0.1474159927127222,
+      "threshold": 0.5,
+      "precision": 0.15392061955469508,
+      "recall": 0.18772136953955135,
+      "f1": 0.16914893617021276,
+      "accuracy": 0.7592849437509631,
+      "positive_rate": 0.13052858683926646
+    },
+    "security": {
+      "roc_auc": 0.5957872044014497,
+      "avg_precision": 0.4852082061659072,
+      "threshold": 0.5,
+      "precision": 0.4621757925072046,
+      "recall": 0.5077166600712307,
+      "f1": 0.4838770507260041,
+      "accuracy": 0.5782092772384034,
+      "positive_rate": 0.389428263214671
+    }
+  },
+  "overall": {
+    "roc_auc_mean": 0.6064180444891999,
+    "avg_precision_mean": 0.47267415507184435,
+    "threshold": null,
+    "precision_mean": 0.4303024250290648,
+    "recall_mean": 0.6160827095729137,
+    "f1_mean": 0.502137923524067,
+    "accuracy_mean": 0.6031489186828992,
+    "n_test_rows": 6489,
+    "thresholding": "per_domain_tuned_on_validation",
+    "tuning_val_days": 14
+  }
+}

@@ -1,0 +1,317 @@
+[
+  {
+    "window_start": "2025-11-30T23:00:00+00:00",
+    "geo_area": "Central",
+    "center_lat": 24.711,
+    "center_lon": 46.675,
+    "radius_meters": 900,
+    "risk_by_domain": {
+      "traffic": 0.6547727642765919,
+      "drugs": 0.6714248536470149,
+      "public_order": 0.8662965904355556,
+      "health": 0.6350093543555904,
+      "civil_defense": 0.47838833278818416,
+      "security": 0.6303299648395775
+    },
+    "risk_score": 0.6560369767237524,
+    "recommended_responding_sectors": [
+      "Ambulance",
+      "Civil Defense",
+      "General Investigation",
+      "Ministry of Health",
+      "Municipality",
+      "Narcotics Control",
+      "National Guard",
+      "Public Security",
+      "Traffic Police"
+    ],
+    "confidence_overlay": {
+      "traffic": 0.55340157495722,
+      "drugs": 0.3932073293542454,
+      "public_order": 0.8034465562590785,
+      "health": 0.45336527098189316,
+      "civil_defense": 0.1474159927127222,
+      "security": 0.4852082061659072
+    }
+  },
+  {
+    "window_start": "2025-11-30T23:00:00+00:00",
+    "geo_area": "East",
+    "center_lat": 24.72,
+    "center_lon": 46.86,
+    "radius_meters": 900,
+    "risk_by_domain": {
+      "traffic": 0.5912359666997851,
+      "drugs": 0.6260481822977836,
+      "public_order": 0.7759470021729026,
+      "health": 0.5536858766891081,
+      "civil_defense": 0.4881823977480462,
+      "security": 0.521519142223953
+    },
+    "risk_score": 0.5927697613052632,
+    "recommended_responding_sectors": [
+      "Ambulance",
+      "Civil Defense",
+      "General Investigation",
+      "Ministry of Health",
+      "Municipality",
+      "Narcotics Control",
+      "National Guard",
+      "Public Security",
+      "Traffic Police"
+    ],
+    "confidence_overlay": {
+      "traffic": 0.55340157495722,
+      "drugs": 0.3932073293542454,
+      "public_order": 0.8034465562590785,
+      "health": 0.45336527098189316,
+      "civil_defense": 0.1474159927127222,
+      "security": 0.4852082061659072
+    }
+  },
+  {
+    "window_start": "2025-11-30T23:00:00+00:00",
+    "geo_area": "North",
+    "center_lat": 24.86,
+    "center_lon": 46.67,
+    "radius_meters": 900,
+    "risk_by_domain": {
+      "traffic": 0.46145703647129077,
+      "drugs": 0.5534946382645379,
+      "public_order": 0.6213470223285537,
+      "health": 0.4958309179631625,
+      "civil_defense": 0.5080900065480011,
+      "security": 0.544125205092929
+    },
+    "risk_score": 0.5307241377780791,
+    "recommended_responding_sectors": [
+      "Ambulance",
+      "Civil Defense",
+      "General Investigation",
+      "Ministry of Health",
+      "Municipality",
+      "Narcotics Control",
+      "National Guard",
+      "Public Security",
+      "Traffic Police"
+    ],
+    "confidence_overlay": {
+      "traffic": 0.55340157495722,
+      "drugs": 0.3932073293542454,
+      "public_order": 0.8034465562590785,
+      "health": 0.45336527098189316,
+      "civil_defense": 0.1474159927127222,
+      "security": 0.4852082061659072
+    }
+  },
+  {
+    "window_start": "2025-11-30T23:00:00+00:00",
+    "geo_area": "South",
+    "center_lat": 24.58,
+    "center_lon": 46.67,
+    "radius_meters": 900,
+    "risk_by_domain": {
+      "traffic": 0.45820393144329113,
+      "drugs": 0.5417965742443163,
+      "public_order": 0.6097910135383731,
+      "health": 0.5095464809746116,
+      "civil_defense": 0.4712017281836662,
+      "security": 0.4813873474926541
+    },
+    "risk_score": 0.5119878459794853,
+    "recommended_responding_sectors": [
+      "Ambulance",
+      "Civil Defense",
+      "General Investigation",
+      "Ministry of Health",
+      "Municipality",
+      "Narcotics Control",
+      "National Guard",
+      "Public Security",
+      "Traffic Police"
+    ],
+    "confidence_overlay": {
+      "traffic": 0.55340157495722,
+      "drugs": 0.3932073293542454,
+      "public_order": 0.8034465562590785,
+      "health": 0.45336527098189316,
+      "civil_defense": 0.1474159927127222,
+      "security": 0.4852082061659072
+    }
+  },
+  {
+    "window_start": "2025-11-30T23:00:00+00:00",
+    "geo_area": "NorthWest",
+    "center_lat": 24.86,
+    "center_lon": 46.545,
+    "radius_meters": 900,
+    "risk_by_domain": {
+      "traffic": 0.47855079140270596,
+      "drugs": 0.5326827974930517,
+      "public_order": 0.6352043609680941,
+      "health": 0.42292299314687537,
+      "civil_defense": 0.43018309570538293,
+      "security": 0.5445153263857828
+    },
+    "risk_score": 0.5073432275169821,
+    "recommended_responding_sectors": [
+      "Ambulance",
+      "Civil Defense",
+      "General Investigation",
+      "Ministry of Health",
+      "Municipality",
+      "Narcotics Control",
+      "National Guard",
+      "Public Security",
+      "Traffic Police"
+    ],
+    "confidence_overlay": {
+      "traffic": 0.55340157495722,
+      "drugs": 0.3932073293542454,
+      "public_order": 0.8034465562590785,
+      "health": 0.45336527098189316,
+      "civil_defense": 0.1474159927127222,
+      "security": 0.4852082061659072
+    }
+  },
+  {
+    "window_start": "2025-11-30T23:00:00+00:00",
+    "geo_area": "SouthWest",
+    "center_lat": 24.58,
+    "center_lon": 46.545,
+    "radius_meters": 900,
+    "risk_by_domain": {
+      "traffic": 0.48937368324986963,
+      "drugs": 0.49994395714257983,
+      "public_order": 0.57620643981116,
+      "health": 0.5356078892121765,
+      "civil_defense": 0.4392364738731602,
+      "security": 0.4940435976497308
+    },
+    "risk_score": 0.5057353401564462,
+    "recommended_responding_sectors": [
+      "Ambulance",
+      "Civil Defense",
+      "General Investigation",
+      "Ministry of Health",
+      "Municipality",
+      "Narcotics Control",
+      "National Guard",
+      "Public Security",
+      "Traffic Police"
+    ],
+    "confidence_overlay": {
+      "traffic": 0.55340157495722,
+      "drugs": 0.3932073293542454,
+      "public_order": 0.8034465562590785,
+      "health": 0.45336527098189316,
+      "civil_defense": 0.1474159927127222,
+      "security": 0.4852082061659072
+    }
+  },
+  {
+    "window_start": "2025-11-30T23:00:00+00:00",
+    "geo_area": "SouthEast",
+    "center_lat": 24.58,
+    "center_lon": 46.86,
+    "radius_meters": 900,
+    "risk_by_domain": {
+      "traffic": 0.3890716157047745,
+      "drugs": 0.5760203798554794,
+      "public_order": 0.5513030418958472,
+      "health": 0.4769348757556316,
+      "civil_defense": 0.48930425050953397,
+      "security": 0.46512976558469676
+    },
+    "risk_score": 0.49129398821766057,
+    "recommended_responding_sectors": [
+      "Ambulance",
+      "Civil Defense",
+      "General Investigation",
+      "Ministry of Health",
+      "Municipality",
+      "Narcotics Control",
+      "National Guard",
+      "Public Security",
+      "Traffic Police"
+    ],
+    "confidence_overlay": {
+      "traffic": 0.55340157495722,
+      "drugs": 0.3932073293542454,
+      "public_order": 0.8034465562590785,
+      "health": 0.45336527098189316,
+      "civil_defense": 0.1474159927127222,
+      "security": 0.4852082061659072
+    }
+  },
+  {
+    "window_start": "2025-11-30T23:00:00+00:00",
+    "geo_area": "West",
+    "center_lat": 24.72,
+    "center_lon": 46.545,
+    "radius_meters": 900,
+    "risk_by_domain": {
+      "traffic": 0.4475287875397615,
+      "drugs": 0.5239809462781537,
+      "public_order": 0.5525188269187121,
+      "health": 0.491094736938963,
+      "civil_defense": 0.4603188055399141,
+      "security": 0.467697028450973
+    },
+    "risk_score": 0.49052318861107963,
+    "recommended_responding_sectors": [
+      "Ambulance",
+      "Civil Defense",
+      "General Investigation",
+      "Ministry of Health",
+      "Municipality",
+      "Narcotics Control",
+      "National Guard",
+      "Public Security",
+      "Traffic Police"
+    ],
+    "confidence_overlay": {
+      "traffic": 0.55340157495722,
+      "drugs": 0.3932073293542454,
+      "public_order": 0.8034465562590785,
+      "health": 0.45336527098189316,
+      "civil_defense": 0.1474159927127222,
+      "security": 0.4852082061659072
+    }
+  },
+  {
+    "window_start": "2025-11-30T23:00:00+00:00",
+    "geo_area": "NorthEast",
+    "center_lat": 24.86,
+    "center_lon": 46.86,
+    "radius_meters": 900,
+    "risk_by_domain": {
+      "traffic": 0.4019077774907496,
+      "drugs": 0.49871589668377847,
+      "public_order": 0.5380093796185498,
+      "health": 0.4328397164262304,
+      "civil_defense": 0.47936945405768394,
+      "security": 0.459805910947631
+    },
+    "risk_score": 0.4684413558707705,
+    "recommended_responding_sectors": [
+      "Ambulance",
+      "Civil Defense",
+      "General Investigation",
+      "Ministry of Health",
+      "Municipality",
+      "Narcotics Control",
+      "National Guard",
+      "Public Security",
+      "Traffic Police"
+    ],
+    "confidence_overlay": {
+      "traffic": 0.55340157495722,
+      "drugs": 0.3932073293542454,
+      "public_order": 0.8034465562590785,
+      "health": 0.45336527098189316,
+      "civil_defense": 0.1474159927127222,
+      "security": 0.4852082061659072
+    }
+  }
+]
