@@ -13,7 +13,7 @@ Monorepo packages:
 ## Demo
 
 A short demo video / screenshots are available here:
-- https://drive.google.com/drive/folders/1iEcrKjh25Yd-ep3JpGMREvSRL1O15nag?usp=drive_link
+- [https://drive.google.com/drive/folders/1iEcrKjh25Yd-ep3JpGMREvSRL1O15nag?usp=drive_link](https://drive.google.com/drive/folders/1iEcrKjh25Yd-ep3JpGMREvSRL1O15nag?usp=sharing)
 
 ---
 
