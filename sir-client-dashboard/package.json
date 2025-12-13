@@ -10,7 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@mapbox/mapbox-gl-rtl-text": "^0.3.0",
     "@tanstack/react-query": "^5.90.12",
+    "@turf/turf": "^7.3.1",
+    "axios": "^1.13.2",
     "clsx": "^2.1.1",
     "date-fns": "^4.1.0",
     "lucide-react": "^0.561.0",

@@ -1,0 +1,11 @@
+/* remove default white bubble */
+.sir-popup .maplibregl-popup-content {
+    padding: 0;
+    background: transparent;
+    box-shadow: none;
+}
+
+/* hide the little default tip (we don't need it) */
+.sir-popup .maplibregl-popup-tip {
+    display: none;
+}
